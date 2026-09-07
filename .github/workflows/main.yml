@@ -15,10 +15,6 @@ jobs:
         - name: Windows
           os: windows-latest
 
-        - name: Android32
-          os: ubuntu-latest
-          target: Android32
-
         - name: Android64
           os: ubuntu-latest
           target: Android64
