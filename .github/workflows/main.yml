@@ -14,6 +14,7 @@ jobs:
         config:
         - name: Windows
           os: windows-latest
+          target: Win64
 
         - name: Android64
           os: ubuntu-latest
@@ -32,6 +33,7 @@ jobs:
         with:
           combine: true
           target: ${{ matrix.config.target }}
+          sdk: given
 
   package:
     name: Package builds
