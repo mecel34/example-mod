@@ -1,14 +1,14 @@
 {
-  "geode": "v4.0.0",
+  "geode": "v5.10.1",
   "gd": {
-    "win": "*",
-    "android": "*"
+    "win": "2.2074",
+    "android": "2.2074"
   },
   "id": "ebro1500.platformer_saves",
   "version": "v1.0.0",
   "name": "Platformer Saves",
   "developer": "Ebro1500",
-  "description": "Allows you to save checkpoints and progress in platformer levels.",
+  "description": "Allows you to save checkpoints and progress in platformer levels."
   "settings": {
     "auto-save": {
       "name": "Auto Save",
