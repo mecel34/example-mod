@@ -1,17 +1,20 @@
 {
-	"geode": "$GEODE_VERSION",
-	"gd": {
+  "geode": "v5.10.1",
+  "gd": {
 		"win": "2.2081",
-		"android": "2.2081",
-		"mac": "2.2081",
-		"ios": "2.2081"
+		"android": "2.2081"
 	},
-	"id": "$MOD_ID",
-	"name": "$MOD_NAME",
-	"version": "$MOD_VERSION",
-	"developer": "$MOD_DEVELOPER",
-	"description": "$MOD_DESCRIPTION",
-	"dependencies": {
-		"geode.node-ids": ">=v1.23.3"
-	}
+  "id": "ebro1500.platformer_saves",
+  "version": "v1.0.0",
+  "name": "Platformer Saves",
+  "developer": "Ebro1500",
+  "description": "Allows you to save checkpoints and progress in platformer levels.",
+  "settings": {
+    "auto-save": {
+      "name": "Auto Save",
+      "description": "Automatically save when a checkpoint is reached.",
+      "type": "bool",
+      "default": true
+    }
+  }
 }
