@@ -14,7 +14,6 @@ jobs:
         config:
         - name: Windows
           os: windows-latest
-          target: Win64
 
         - name: Android64
           os: ubuntu-latest
@@ -28,12 +27,9 @@ jobs:
 
       - name: Build the mod
         uses: geode-sdk/build-geode-mod@main
-        env:
-          GEODE_SDK: ${{ github.workspace }}/geode-sdk-clone
         with:
           combine: true
           target: ${{ matrix.config.target }}
-          sdk: given
 
   package:
     name: Package builds
