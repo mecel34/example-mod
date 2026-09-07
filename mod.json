@@ -1,9 +1,9 @@
 {
-  "geode": "v5.10.1",
+  "geode": ">=v3.0.0",
   "gd": {
-		"win": "2.2081",
-		"android": "2.2081"
-	},
+    "win": "*",
+    "android": "*"
+  },
   "id": "ebro1500.platformer_saves",
   "version": "v1.0.0",
   "name": "Platformer Saves",
