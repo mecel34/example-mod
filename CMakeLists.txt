@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 3.13)
 
-# Geode SDK yolunu GitHub Actions sanal ortamı ve yerel klasörlerden doğrudan yakala
+# Geode SDK yolunu ortam değişkeninden veya klonlanan klasörden yükle
 if(DEFINED ENV{GEODE_SDK})
-    list(APPEND CMAKE_PREFIX_PATH "$ENV{GEODE_SDK}")
-elseif(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/geode-sdk-clone")
-    list(APPEND CMAKE_PREFIX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/geode-sdk-clone")
+    set(GEODE_SDK "$ENV{GEODE_SDK}")
+else()
+    set(GEODE_SDK "${CMAKE_CURRENT_SOURCE_DIR}/geode-sdk-clone")
 endif()
+
+list(APPEND CMAKE_PREFIX_PATH "${GEODE_SDK}")
 
 project(PlatformerSaves VERSION 1.0.0 LANGUAGES CXX)
 
